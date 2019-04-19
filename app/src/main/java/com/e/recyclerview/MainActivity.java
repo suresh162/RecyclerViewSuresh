@@ -22,10 +22,10 @@ public class MainActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.recyclerView);
 
         List<Contacts>contactsList=new ArrayList<>();
-        contactsList.add(new Contacts('Saughat Malla', '9808011122',R.drawable.saugat));
-        contactsList.add(new Contacts('Rajesh Hamal', '980892212',R.drawable.rajesh));
-        contactsList.add(new Contacts('Dahayang Rai', '9808092110',R.drawable.dahayang));
-        contactsList.add((new Contacts('Bhuwan KC', '9808092211',R.drawable.bhuwan)));
+        contactsList.add(new Contacts("Saughat Malla", "9808011122",R.drawable.saugat));
+        contactsList.add(new Contacts("Rajesh Hamal", "980892212",R.drawable.rajesh));
+        contactsList.add(new Contacts("Dahayang Rai", "9808092110",R.drawable.dahayang));
+        contactsList.add((new Contacts("Bhuwan KC", "9808092211",R.drawable.bhuwan)));
 
         ContactsAdapter contactsAdapter = new ContactsAdapter(this,contactsList);
         recyclerView.setAdapter(contactsAdapter);
